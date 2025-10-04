@@ -5,12 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Somaliland Cancer Support Organization</title>
-    
+
     <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -18,11 +21,9 @@
       tailwind.config = {
         theme: {
           extend: {
-            // Extend 'Inter' as the default font
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
             },
-            // Custom color palette for SCSO
             colors: {
               'scso-purple': {
                 '50': '#f5f3ff',
@@ -37,12 +38,25 @@
                 '900': '#4c1d95',
                 '950': '#2e1065',
               },
-            }
-          }
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- React 18 Import Map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom": "https://esm.sh/react-dom@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "react-router-dom": "https://esm.sh/react-router-dom@6.23.0"
         }
       }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="./index.tsx"></script>
